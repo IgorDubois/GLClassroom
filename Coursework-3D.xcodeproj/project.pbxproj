@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		15D5C99B1E929FE1000D882E /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 15D5C99A1E929FE1000D882E /* main.cpp */; };
+		15D5C9A41E92A02B000D882E /* CDrawModel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 15D5C9A21E92A02B000D882E /* CDrawModel.cpp */; };
+		15D5C9A71E92A051000D882E /* CPolygonMesh.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 15D5C9A51E92A051000D882E /* CPolygonMesh.cpp */; };
+		15D5C9AA1E92A06B000D882E /* Point.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 15D5C9A81E92A06B000D882E /* Point.cpp */; };
+		15D5C9AD1E92A08B000D882E /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15D5C9AC1E92A08B000D882E /* OpenGL.framework */; };
+		15D5C9AF1E92A08F000D882E /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15D5C9AE1E92A08F000D882E /* GLUT.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +30,15 @@
 /* Begin PBXFileReference section */
 		15D5C9971E929FE1000D882E /* Coursework-3D */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Coursework-3D"; sourceTree = BUILT_PRODUCTS_DIR; };
 		15D5C99A1E929FE1000D882E /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		15D5C9A11E92A015000D882E /* main.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = main.h; sourceTree = "<group>"; };
+		15D5C9A21E92A02B000D882E /* CDrawModel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CDrawModel.cpp; sourceTree = "<group>"; };
+		15D5C9A31E92A02B000D882E /* CDrawModel.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CDrawModel.hpp; sourceTree = "<group>"; };
+		15D5C9A51E92A051000D882E /* CPolygonMesh.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CPolygonMesh.cpp; sourceTree = "<group>"; };
+		15D5C9A61E92A051000D882E /* CPolygonMesh.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CPolygonMesh.hpp; sourceTree = "<group>"; };
+		15D5C9A81E92A06B000D882E /* Point.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Point.cpp; sourceTree = "<group>"; };
+		15D5C9A91E92A06B000D882E /* Point.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Point.hpp; sourceTree = "<group>"; };
+		15D5C9AC1E92A08B000D882E /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		15D5C9AE1E92A08F000D882E /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +46,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15D5C9AF1E92A08F000D882E /* GLUT.framework in Frameworks */,
+				15D5C9AD1E92A08B000D882E /* OpenGL.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -43,6 +59,7 @@
 			children = (
 				15D5C9991E929FE1000D882E /* Coursework-3D */,
 				15D5C9981E929FE1000D882E /* Products */,
+				15D5C9AB1E92A08B000D882E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,8 +75,24 @@
 			isa = PBXGroup;
 			children = (
 				15D5C99A1E929FE1000D882E /* main.cpp */,
+				15D5C9A11E92A015000D882E /* main.h */,
+				15D5C9A21E92A02B000D882E /* CDrawModel.cpp */,
+				15D5C9A31E92A02B000D882E /* CDrawModel.hpp */,
+				15D5C9A51E92A051000D882E /* CPolygonMesh.cpp */,
+				15D5C9A61E92A051000D882E /* CPolygonMesh.hpp */,
+				15D5C9A81E92A06B000D882E /* Point.cpp */,
+				15D5C9A91E92A06B000D882E /* Point.hpp */,
 			);
 			path = "Coursework-3D";
+			sourceTree = "<group>";
+		};
+		15D5C9AB1E92A08B000D882E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				15D5C9AE1E92A08F000D882E /* GLUT.framework */,
+				15D5C9AC1E92A08B000D882E /* OpenGL.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -120,7 +153,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15D5C9AA1E92A06B000D882E /* Point.cpp in Sources */,
+				15D5C9A71E92A051000D882E /* CPolygonMesh.cpp in Sources */,
 				15D5C99B1E929FE1000D882E /* main.cpp in Sources */,
+				15D5C9A41E92A02B000D882E /* CDrawModel.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,6 +285,7 @@
 				15D5C9A01E929FE1000D882E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
