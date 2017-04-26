@@ -10,7 +10,7 @@
 #include "CPolygonMesh.hpp"
 
 // Print lots of info when reading in model
-bool debugPolygons = false;
+bool debugPolygons = true;
 
 colour colour_array[] =
 {
